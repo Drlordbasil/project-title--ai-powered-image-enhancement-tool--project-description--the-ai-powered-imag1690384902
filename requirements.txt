@@ -1,0 +1,6 @@
+The package requirements for this Python program are:
+- opencv-python
+- numpy
+
+You can install these packages using pip with the following command:
+pip install opencv-python numpy
