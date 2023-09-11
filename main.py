@@ -71,8 +71,7 @@ def main():
 
     # Check if the input directory exists
     if not os.path.exists(args.directory):
-        print("Invalid directory path.")
-        return
+        return False  # Print statement not necessary
 
     # Process single image or batch process images
     if os.path.isfile(args.directory):
@@ -84,8 +83,7 @@ def main():
         batch_process_images(args.directory, args.brightness, args.contrast, args.sharpness, args.saturation,
                              args.noise_reduction)
     else:
-        print("Invalid directory or file path.")
-        return
+        return False  # Print statement not necessary
 
 
 if __name__ == '__main__':
